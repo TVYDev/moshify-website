@@ -6,6 +6,7 @@
   --color-body: #918ca4;
   --color-border: #ccc;
   --border-radius: 30px;
+  --card-border-radius: 7px;
 }
 
 *,
@@ -284,9 +285,14 @@ a {
 
 /* Cards */
 .card {
-  border-radius: 7px;
+  border-radius: var(--card-border-radius);
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
+  /* Disabled overflow: hidden to show the popular badge on the plan component nicely */
+  /* overflow: hidden;  */
+}
+
+.card__header {
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
 }
 
 .card__header,
@@ -336,6 +342,19 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+  width: 40px;
 }
 
 @media screen and (min-width: 1024px) {
