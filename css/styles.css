@@ -6,7 +6,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
-  --border-radius: 30px;
+  --border-radius: 40px;
   --card-border-radius: 7px;
 }
 
@@ -207,6 +207,13 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  height: 2rem;
+  margin-right: 1rem;
+  width: 2rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -734,5 +741,32 @@ a {
   .hero__content {
     align-self: center;
     text-align: left;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  border: 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+  margin: 4rem auto;
+  max-width: 680px;
+}
+
+.block-domain__prices {
+  align-items: center;
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-row-gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    font-size: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
