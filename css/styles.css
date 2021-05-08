@@ -209,7 +209,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -304,6 +304,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -385,10 +386,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -427,6 +424,10 @@ a {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 
@@ -782,11 +783,12 @@ a {
 
 .block-domain__prices {
   align-items: center;
+  color: var(--color-headings);
   display: grid;
   font-size: 2rem;
   font-weight: 600;
   grid-row-gap: 4rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   max-width: 730px;
   margin: 0 auto;
@@ -927,4 +929,9 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign-up callout */
+.callout-signup {
+  transform: translateY(5rem);
 }
