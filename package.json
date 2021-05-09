@@ -1,0 +1,23 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build --no-minify index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TVYDev/moshify-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TVYDev/moshify-website/issues"
+  },
+  "homepage": "https://github.com/TVYDev/moshify-website#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
